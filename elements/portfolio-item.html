@@ -1,0 +1,57 @@
+<link rel="import" href="../vendor/polymer/polymer.html">
+
+<dom-module id="portfolio-item-element">
+
+    <template>
+
+        <div class="col-xs-12 col-sm-4 portfolio-item">
+
+            <img alt="{{image_alt}}" class="center-block img-responsive" src="{{image_1x}}" srcset="{{image_2x}} 2x, {{image_3x}} 3x">
+
+            <h3 class="dark_grey">{{title}}</h3>
+
+            <a class="grey" href="{{link}}">{{text}}</a>
+
+        </div>
+
+    </template>
+
+    <script>
+
+        Polymer({
+            is: "portfolio-item-element",
+            properties: {
+                image_1x: {
+                    type: String,
+                    value: "#"
+                },
+                image_2x: {
+                    type: String,
+                    value: "#"
+                },
+                image_3x: {
+                    type: String,
+                    value: "#"
+                },
+                link: {
+                    type: String,
+                    value: "#"
+                },
+                text: {
+                    type: String,
+                    value: "link text"
+                },
+                title: {
+                    type: String,
+                    value: "title of it"
+                },
+                image_alt : {
+                    type: String
+                }
+            }
+        });
+
+    </script>
+
+
+</dom-module>
