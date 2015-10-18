@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <script src="vendor/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="elements/portfolio-item.html">
+
   </head>
 
   <body>
@@ -22,18 +25,18 @@
 
           <div class="row">
 
+              <div class="col-xs-12 col-sm-9">
+
+                  <h1 class="black">Phillip Marashian</h1>
+                  <h2 class="mast black">Front-end Ninja</h2>
+
+              </div>
+
               <div class="col-xs-12 col-sm-3">
 
                   <picture>
                       <img class="logo" src="assets/images/udacity-logo-1x.jpg" srcset="assets/images/udacity-logo-2x.jpg 2x, assets/images/udacity-logo-3x.jpg 3x" alt="Udacity Logo">
                   </picture>
-
-              </div>
-
-              <div class="col-xs-12 col-sm-9">
-
-                  <h1 class="grey">Phillip Marashian</h1>
-                  <p class="mast grey">Front-end Ninja</p>
 
               </div>
 
@@ -67,7 +70,7 @@
 
               <div class="col-xs-12">
 
-                  <h2 class="grey">Featured Work</h2>
+                  <h2 class="black">Featured Work</h2>
 
               </div>
 
@@ -77,46 +80,19 @@
 
               <article>
 
-                  <div class="col-xs-12 col-sm-4 portfolio-item">
-
-                      <img alt="About Me" class="center-block img-responsive" src="assets/images/about-me-1x.jpg" srcset="assets/images/about-me-2x.jpg 2x, assets/images/about-me-3x.jpg 3x">
-
-                      <h3 class="dark_grey">About Me</h3>
-
-                      <a class="grey" href="https://github.com/pmarashian/about-me">https://github.com/pmarashian/about-me</a>
-
-                  </div>
+                  <portfolio-item-element title="About Me" image_1x="assets/images/about-me-1x.jpg" image_2x="assets/images/about-me-2x.jpg" image_3x="assets/images/about-me-3x.jpg" image_alt="About Me" text="https://github.com/pmarashian/about-me" link="https://github.com/pmarashian/about-me"></portfolio-item-element>
 
               </article>
 
               <article>
 
-                  <div class="col-xs-12 col-sm-4 portfolio-item">
-
-                      <img alt="Online Resume" class="center-block img-responsive" src="assets/images/resume-1x.jpg" srcset="assets/images/resume-2x.jpg 2x, assets/images/resume-3x.jpg 3x">
-
-                      <h3 class="dark_grey">Online Resume</h3>
-
-                      <a class="grey" href="#">check back soon!</a>
-
-                  </div>
+                  <portfolio-item-element title="Online Resume" image_1x="assets/images/resume-1x.jpg" image_2x="assets/images/resume-2x.jpg" image_3x="assets/images/resume-3x.jpg" image_alt="Online Resume" text="check back soon!" link="#"></portfolio-item-element>
 
               </article>
 
               <article>
 
-                  <div class="col-xs-12 col-sm-4 portfolio-item">
-
-                      <!-- image from http://www.vectors4all.net/vectors/retro-joystick-clip-art -->
-                      <!-- TODO replace image with image of project -->
-
-                      <img alt="Classic Arcade Game" class="center-block img-responsive" src="assets/images/arcade-1x.jpg" srcset="assets/images/arcade-2x.jpg 2x, assets/images/arcade-3x.jpg 3x">
-
-                      <h3 class="dark_grey">Classic Arcade Game</h3>
-
-                      <a class="grey" href="#">check back soon!</a>
-
-                  </div>
+                  <portfolio-item-element title="Classic Arcade Game" image_1x="assets/images/arcade-1x.jpg" image_2x="assets/images/arcade-2x.jpg" image_3x="assets/images/arcade-3x.jpg" image_alt="Classic Arcade Game" text="check back soon!" link="#"></portfolio-item-element>
 
               </article>
 
