@@ -1,0 +1,8 @@
+{
+  "name": "marashian-portfolio",
+  "version": "0.3.2",
+  "devDependencies": {
+    "bootstrap": "~3.1"
+  },
+  "dependencies": {}
+}

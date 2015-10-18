@@ -1,0 +1,149 @@
+/*
+*   Main Styles
+*/
+
+body {
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, p, .portfolio-item, img {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-transform: none;
+}
+
+.grey {
+    color: #bcbbbb;
+}
+
+.dark_grey {
+    color: #676857;
+}
+
+.container {
+    max-width: 860px;
+}
+
+/*
+*   Header
+*/
+
+.logo {
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+    margin: .4em 0 0 0;
+}
+
+.mast {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.line {
+    background-color: #bcbbbb;
+    height: 0.2em;
+}
+
+/*
+*   Portfolio Section
+*/
+
+h2 {
+    font-weight: 500;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+h3 {
+    margin: 0.5em 0 0 0;
+}
+
+/* http://css3generator.com/ */
+
+.portfolio-item img {
+    width: 85%;
+    -webkit-transition: transform 500ms ease;
+    -moz-transition: transform 500ms ease;
+    -ms-transition: transform 500ms ease;
+    -o-transition: transform 500ms ease;
+    transition: transform 500ms ease;
+}
+
+    .portfolio-item img:hover {
+        -moz-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+.portfolio-item a {
+    margin-bottom: 2em;
+    word-wrap: break-word;
+    display: block;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+.portfolio-item a:hover {
+    text-decoration: none;
+    color: #f8981d;
+}
+
+.portfolio-item a:focus {
+    text-decoration: none;
+}
+
+/*
+*   Reformat for grid layout
+*/
+
+@media screen and ( min-width: 768px ) {
+
+    h1, .mast {
+        text-align: right;
+    }
+
+    h2 {
+        text-align: left;
+        margin: 0.5em 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+    }
+
+    .portfolio-item a {
+        font-size: 0.75em;
+    }
+
+}
+
+@media screen and ( min-width: 1024px ) {
+
+    .portfolio-item a {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        margin: .75em 0 .5em 0;
+    }
+
+}
